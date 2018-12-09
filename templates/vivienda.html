@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}
+Vivienda
+{% endblock %}
+{% block content %}
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="{{ url_for('registros') }}">Regresar</a></li>
+</ul>
+<form method="post" action="{{ url_for('vivienda') }}">
+  <div class="form-group col-md-3">
+    <label>Código De Vivienda</label>
+    <input name="id" type="text" class="form-control" placeholder="Código">
+  </div>
+<div class="form-row">
+    <div class="form-group col-md-2">
+      <label >NIF Propietario</label>
+      <input name="propietario_id" type="text" class="form-control"  placeholder="NIF">
+    </div>
+    <div class="form-group col-md-2">
+      <label >CIF Agencia</label>
+      <input name="agencia_id" type="text" class="form-control" placeholder="CIF">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-2">
+      <label >Número</label>
+      <input name="numero" type="text" class="form-control" placeholder="Número">
+    </div>
+    <div class="form-group col-md-2">
+      <label>Piso</label>
+      <input name="piso" type="text" class="form-control" placeholder="Piso">
+    </div>
+    <div class="form-group col-md-2">
+      <label>Código Postal</label>
+      <input name="cp" type="text" class="form-control"  placeholder="Código Postal">
+    </div>
+  </div>
+    <div class="form-group col-md-4">
+      <label >Población</label>
+      <input name="poblacion" type="text" class="form-control"  placeholder="Poblacíon">
+    </div>
+  </div>
+  <div class="form-group col-md-8" >
+    <label for="exampleFormControlTextarea1">Descripción</label>
+    <textarea name="descripcion" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+  </div>
+  <button type="submit" class="btn btn-primary" value="Vivienda">Registrar</button>
+</form>
+{% endblock %}

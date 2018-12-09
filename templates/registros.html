@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}
+Registros
+{% endblock %}
+{% block content %}
+<div style="text-align: center; width:1350px">
+<br>
+<br>
+<button type="button" class="btn btn-warning">
+<a href="{{ url_for('propietario') }}" style="color:#000000;">Registrar Propietario<a/>
+</button>
+<br>
+<br>
+</div>
+<div style="text-align: center; width:1350px">
+<button type="button" class="btn btn-warning">
+<a href="{{ url_for('vivienda') }}" style="color:#000000;">Registrar Vivienda</a>
+</button>
+<br>
+<br>
+</div>
+<div style="text-align: center; width:1350px">
+<button type="button" class="btn btn-warning">
+<a href="{{ url_for('agencia') }}" style="color:#000000;">Registrar Agencia</a>
+</button>
+<br>
+<br>
+</div>
+<div style="text-align: center; width:1350px">
+<button type="button" class="btn btn-warning">
+<a href="{{ url_for('alquiler') }}" style="color:#000000;">Registrar Alquiler</a>
+</button>
+<br>
+<br>
+</div>
+<div style="text-align: center; width:1350px">
+<button type="button" class="btn btn-warning">
+<a href="{{ url_for('inquilino') }}" style="color:#000000;">Registrar Inquilino</a>
+</button>
+<br>
+<br>
+</div>
+{% endblock %}

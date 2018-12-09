@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+Alquiler
+{% endblock %}
+{% block content %}
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="{{ url_for('busquedas') }}">Regresar</a></li>
+</ul>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Codigo De Alquiler: </strong>{{rent.id}}</li>
+  <li class="list-group-item"><strong>NIF Inquilino: </strong>{{rent.inquilino_id}}</li>
+  <li class="list-group-item"><strong>Codigo De Vivienda: </strong>{{rent.vivienda_id}}</li> 
+  <li class="list-group-item"><strong>Fianza: </strong>{{rent.fianza}}</li>
+  <li class="list-group-item"><strong>Fecha De Firma: </strong>{{rent.fecha_firma}}</li>
+  <li class="list-group-item"><strong>Fecha De Inicio: </strong>{{rent.fecha_inicio}}</li> 
+  <li class="list-group-item"><strong>Fecha De Fin: </strong>{{rent.fecha_fin}}</li> 
+  <li class="list-group-item"><strong>Importe Mensual: </strong>{{rent.importe_mensual}}</li> 
+</ul>
+{% endblock %}

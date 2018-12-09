@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+Vivienda
+{% endblock %}
+{% block content %}
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="{{ url_for('busquedas') }}">Regresar</a></li>
+</ul>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Codigo De Vivivenda: </strong>{{viviev.id}}</li>
+  <li class="list-group-item"><strong>NIF Propietario: </strong>{{viviev.propietario_id}}</li>
+  <li class="list-group-item"><strong>CIF Agencia: </strong>{{viviev.agencia_id}}</li>
+  <li class="list-group-item"><strong>Numero: </strong>{{viviev.numero}}</li>
+  <li class="list-group-item"><strong>Piso: </strong>{{viviev.piso}}</li>
+  <li class="list-group-item"><strong>Cp: </strong>{{viviev.cp}}</li>
+  <li class="list-group-item"><strong>Población: </strong>{{viviev.poblacion}}</li>
+  <li class="list-group-item"><strong>Descripción: </strong>{{viviev.descripcion}}</li>  
+</ul>
+{% endblock %}

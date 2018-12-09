@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}
+Busquedas
+{% endblock %}
+{% block content %}
+<form method="get" action="{{ url_for('show_owner') }}">
+  <div class="input-group col-md-6">
+    <input name="prop" type="text" class="form-control" placeholder="Buscar Propietario" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+    <div class="input-group-append" id="button-addon4">
+      <button class="btn btn-outline-secondary" type="button" value="Show Owner">Buscar</button>
+    </div>
+  </div>
+</form>
+<br>
+<form method="get" action="{{ url_for('show_tenement') }}">
+  <div class="input-group col-md-6">
+    <input name="viviev" type="text" class="form-control" placeholder="Buscar Vivienda" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+    <div class="input-group-append" id="button-addon4">
+      <button class="btn btn-outline-secondary" type="button" value="Show Tenement">Buscar</button>
+    </div>
+  </div>
+</form>
+<br>
+<form method="get" action="{{ url_for('show_agency') }}">
+  <div class="input-group col-md-6">
+    <input name="agen" type="text" class="form-control" placeholder="Buscar Agencia" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+    <div class="input-group-append" id="button-addon4">
+      <button class="btn btn-outline-secondary" type="button" value="Show Agency">Buscar</button>
+    </div>
+  </div>
+</form>
+<br>
+<form method="get" action="{{ url_for('show_rental') }}">
+  <div class="input-group col-md-6">
+    <input name="rent" type="text" class="form-control" placeholder="Buscar Alquiler" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+    <div class="input-group-append" id="button-addon4">
+      <button class="btn btn-outline-secondary" type="button" value="Show Rental">Buscar</button>
+    </div>
+  </div>
+</form>
+<br>
+<form method="get" action="{{ url_for('show_tenant') }}">
+  <div class="input-group col-md-6">
+    <input name="tena" type="text" class="form-control" placeholder="Buscar Inquilino" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+    <div class="input-group-append" id="button-addon4">
+      <button class="btn btn-outline-secondary" type="button" value="Show Tenant">Buscar</button>
+    </div>
+  </div>
+</form>
+{% endblock %}

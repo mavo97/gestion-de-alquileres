@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}
+Alquiler
+{% endblock %}
+{% block content %}
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="{{ url_for('registros') }}">Regresar</a></li>
+</ul>
+<form method="post" action="{{ url_for('alquiler') }}">
+  <div class="form-group col-md-4">
+    <label>Código De Alquiler</label>
+    <input name="id" type="text" class="form-control" placeholder="Código">
+  <div class="form-row">
+    <div class="form-group col-md-2">
+      <label >NIF Inquilino</label>
+      <input name="inquilino_id" type="text" class="form-control"  placeholder="NIF">
+    </div>
+    <div class="form-group col-md-12">
+      <label>Código De Vivienda</label>
+      <input name="vivienda_id" type="text" class="form-control"  placeholder="Código">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Fianza</label>
+      <input name="fianza" type="text" class="form-control"  placeholder="Fianza">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Fecha Firma</label>
+      <input name="fecha_firma" type="text" class="form-control" placeholder="YYYY/MM/DD	">
+    </div>
+    <div class="form-group col-md-4">
+      <label >Fecha Inicio</label>
+      <input name="fecha_inicio" type="text" class="form-control" placeholder="YYYY/MM/DD">
+    </div>
+    <div class="form-group col-md-4">
+      <label >Fecha Fin</label>
+      <input name="fecha_fin" type="text" class="form-control" placeholder="YYYY/MM/DD">
+    </div>
+    <div class="form-group col-md-4">
+      <label >Importe Mensual</label>
+      <input name="importe_mensual" type="text" class="form-control"  placeholder="Importe">
+    </div>    
+  </div>
+
+  <div class="form-group">
+  </div>
+  <button type="submit" class="btn btn-primary" value="Alquiler">Registrar</button>
+</form>
+{% endblock %}

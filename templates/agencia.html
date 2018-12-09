@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}
+Agencia
+{% endblock %}
+{% block content %}
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="{{ url_for('registros') }}">Regresar</a></li>
+</ul>
+<form method="post" action="{{ url_for('agencia') }}">
+  <div class="form-group col-md-4">
+    <label >Código De Agencia</label>
+    <input name="codigo_agencia" type="text" class="form-control" placeholder="Código">
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label>Dirección</label>
+      <input name="direccion" type="text" class="form-control" placeholder="Dirección">
+    </div>
+    <div class="form-group col-md-4">
+      <label>CIF</label>
+      <input name="id" type="text" class="form-control" placeholder="CIF">
+    </div>
+  </div>
+
+  <div class="form-group">
+  </div>
+  <button type="submit" class="btn btn-primary" value="Agencia"">Registrar</button>
+</form>
+{% endblock %}

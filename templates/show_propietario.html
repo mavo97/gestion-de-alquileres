@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+Propietario
+{% endblock %}
+{% block content %}
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="{{ url_for('busquedas') }}">Regresar</a></li>
+</ul>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Id: </strong>{{prop.id}}</li>
+  <li class="list-group-item"><strong>Nombre: </strong>{{prop.nombre}}</li>
+  <li class="list-group-item"><strong>Apellidos: </strong>{{prop.apellidos}}</li>
+  <li class="list-group-item"><strong>Teléfono: </strong>{{prop.telefono}}</li>
+  <li class="list-group-item"><strong>Dirección: </strong>{{prop.direccion}}</li>
+  <li class="list-group-item"><strong>Email: </strong>{{prop.email}}</li>
+</ul>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}
+Inquilino
+{% endblock %}
+{% block content %}
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="{{ url_for('busquedas') }}">Regresar</a></li>
+</ul>
+<ul class="list-group">
+  <li class="list-group-item"><strong>NIF Inquilino: </strong>{{tena.id}}</li>
+  <li class="list-group-item"><strong>Nombre: </strong>{{tena.nombre}}</li>
+  <li class="list-group-item"><strong>Apellidos: </strong>{{tena.apellidos}}</li> 
+  <li class="list-group-item"><strong>Fecha De Nacimiento: </strong>{{tena.fecha_nacimiento}}</li>
+  <li class="list-group-item"><strong>Descripción: </strong>{{tena.descripcion}}</li>
+  <li class="list-group-item"><strong>Teléfono: </strong>{{tena.telefono}}</li> 
+</ul>
+{% endblock %}

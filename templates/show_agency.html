@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+Agencia
+{% endblock %}
+{% block content %}
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="{{ url_for('busquedas') }}">Regresar</a></li>
+</ul>
+<ul class="list-group">
+  <li class="list-group-item"><strong>CIF: </strong>{{agen.id}}</li>
+  <li class="list-group-item"><strong>Codigo De Agencia: </strong>{{agen.codigo_agencia}}</li>
+  <li class="list-group-item"><strong>Dirección: </strong>{{agen.direccion}}</li> 
+</ul>
+{% endblock %}

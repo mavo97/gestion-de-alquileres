@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}
+Registro Completado
+{% endblock %}
+{% block content %}
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="{{ url_for('registros') }}">Regresar</a></li>
+</ul>
+<p style="color:red;">Registro Completado con exito.</p>
+{% endblock %}
