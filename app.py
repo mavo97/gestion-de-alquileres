@@ -6,8 +6,8 @@ import os
 
 app = Flask(__name__)
 POSTGRES = {
-    'user': 'mavo1997',
-    'pw': '020897',
+    'user': '****',
+    'pw': '****',
     'db': 'alquileres',
     'host': 'localhost',
     'port': '5432',
